@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./index.css"> -->
+    
+    <link rel="stylesheet" type="text/css" href="/pages/total_report.css" media="screen and (min-width:900px)">
+    <link rel="stylesheet" type="text/css" href="/pages/menu_input_mobile.css" media="screen and (max-width:899px)">
+
+</head>
+<body>
+    <div class="wrap">
+       <header>
+            <h1 class="logo">
+                <a href="/pages/dashboard.html"><img src="/pages/images/smcopLogo.svg" alt="logo"></a>
+            </h1>
+            <nav>
+                <ul class="depth1">
+                    <li class="menu_box">
+                        <h1 class="menu1">
+                            <img src="/pages/images/mingcute_close-fill.svg" alt="menu">
+                        </h1>
+                    </li>
+                    <li>
+                        <a href="/pages/dashboard.html">식당 메뉴 보기</a>
+                    </li>
+                    <li>
+                        <a href="/pages/menu_input.html">식당 메뉴 입력하기</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">발전기 운전 일지</a>
+                    </li>
+                    <li>
+                        <a href="#">에너지 사용량</a>
+                    </li>
+                    <li>
+                        <a href="#">수  온</a>
+                    </li>
+                    <li>
+                        <a href="#">재고관리</a>
+                    </li> -->
+                    <li class="logout_li">
+                        <p class="logout">로그아웃</p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user_box">
+                <h5>삼경엠에스</h5>
+                <h5 class="userName">user</h5> 
+            </div>
+            <h1 class="logout">
+                <img src="/pages/images/ic_round-logout.svg" alt="logout">
+            </h1>
+            <h1 class="menu">
+                <img src="/pages/images/material-symbols_menu.svg" alt="menu">
+            </h1>
+       </header>
+       <main>
+          <div class="posting">
+            <select title="cafeteria_name" name="cafeteria_name" id="cafeterias">
+                <option value="">식당을 선택하세요</option>
+                <option value="소담">소담</option>
+                <option value="프리미업어쩌구">프리미업어쩌구</option>
+            </select>
+            <label class="dates" for="start">시작일</label>
+            <input class="dates" title="dates" type="date" name="start" id="date1">
+            <label class="dates" for="end">종료일</label>
+            <input class="dates" title="dates" type="date" name="end" id="date2">
+            <input class="items_lot" type="submit" name="submit" id="submits" value="검색">
+        </div>
+          <div class="posting">
+            <h5>월요일</h5>
+            <input class="items_lot" title="menu1_1" type="text" name="반" id="mon1" placeholder="밥종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu1_2" type="text" name="반" id="mon2" placeholder="국종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu1_3" type="text" name="반" id="mon3" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu1_4" type="text" name="반" id="mon4" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu1_5" type="text" name="반" id="mon5" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu1_6" type="text" name="반" id="mon6" placeholder="반찬을 입력하세요" readonly>
+            <h5>화요일</h5>
+            <input class="items_lot" title="menu2_1" type="text" name="반" id="tue1" placeholder="밥종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu2_2" type="text" name="반" id="tue2" placeholder="국종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu2_3" type="text" name="반" id="tue3" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu2_4" type="text" name="반" id="tue4" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu2_5" type="text" name="반" id="tue5" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu2_6" type="text" name="반" id="tue6" placeholder="반찬을 입력하세요" readonly>
+            <h5>수요일</h5>
+            <input class="items_lot" title="menu3_1" type="text" name="반" id="wed1" placeholder="밥종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu3_2" type="text" name="반" id="wed2" placeholder="국종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu3_3" type="text" name="반" id="wed3" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu3_4" type="text" name="반" id="wed4" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu3_5" type="text" name="반" id="wed5" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu3_6" type="text" name="반" id="wed6" placeholder="반찬을 입력하세요" readonly>
+            <h5>목요일</h5>
+            <input class="items_lot" title="menu4_1" type="text" name="반" id="thu1" placeholder="밥종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu4_2" type="text" name="반" id="thu2" placeholder="국종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu4_3" type="text" name="반" id="thu3" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu4_4" type="text" name="반" id="thu4" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu4_5" type="text" name="반" id="thu5" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu4_6" type="text" name="반" id="thu6" placeholder="반찬을 입력하세요" readonly>
+            <h5>금요일</h5>
+            <input class="items_lot" title="menu5_1" type="text" name="반" id="fri1" placeholder="밥종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu5_2" type="text" name="반" id="fri2" placeholder="국종류를 입력하세요" readonly>
+            <input class="items_lot" title="menu5_3" type="text" name="반" id="fri3" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu5_4" type="text" name="반" id="fri4" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu5_5" type="text" name="반" id="fri5" placeholder="반찬을 입력하세요" readonly>
+            <input class="items_lot" title="menu5_6" type="text" name="반" id="fri6" placeholder="반찬을 입력하세요" readonly>
+          </div>
+            
+            
+           
+       </main>
+    </div>
+</body>
+<script src="/pages/data_output.js"></script>
+<script src="/pages/data.js"></script>
+<!-- <script src="/pages/data_dashboard.js"></script> -->
+</html>

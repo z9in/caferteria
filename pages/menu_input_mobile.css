@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  ul {
+    list-style-type: none;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      width: 100vw;
+      height: 100vh;
+      margin: auto;
+    }
+    
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+header {
+    position: fixed;
+    top: 0;
+    float: left;
+    z-index: 90;
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 2px solid #ccc;
+    /* outline: 1px solid blue; */
+}
+.logo {
+    /* outline: 1px solid black; */
+    height: 40px;
+    /* display: none; */
+}
+.logo > a > img {
+    width: 100%;
+    height: 100%;
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* outline: 1px solid #ccc; */
+    width: 100%;
+    height: 100vh;
+    z-index: 91;
+    background-color: #fff;
+    float: left;
+    display: none;
+}
+nav > .depth1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+}
+nav > .depth1 > .menu_box > h1 {
+    position: absolute;
+    right: 20px;
+}
+nav > .depth1 > li {
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 10px;
+}
+.user_box {
+    /* outline: 1px solid black; */
+    display: none;
+    /* justify-content: space-between; */
+    width: 200px;
+}
+.user_box > h5 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+.logout {
+    /* outline: 1px solid black; */
+    height: 40px;
+    cursor: pointer;
+    /* display: none; */
+}
+.logout > img {
+    height: 100%;
+    display: none;
+}
+nav > .depth1 > .logout_li > .logout {
+    height: 20px;
+}
+.menu {
+    height: 40px;
+    cursor: pointer;
+}
+/* dashboard */
+main {
+    width: 100%;
+    height: calc(100%);
+    padding-top: 20px;
+    margin-top: 70px;
+    /* outline: 1px solid red; */
+}
+.posting {
+    outline: 1px solid red;
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#cafeterias {
+    width: 100%;
+}
+select {
+    margin-bottom: 16px;
+}
+label {
+    font-size: 15px;
+}
+h5 {
+    margin-top: 10px;
+    width: 100%;
+}
+.items_lot {
+    margin-top: 5px;
+    width: 100%;
+    border: 0;
+}
+#submits {
+    margin-top: 20px;
+}
