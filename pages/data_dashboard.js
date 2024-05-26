@@ -74,12 +74,12 @@ let option = {
   body: JSON.stringify(data)
 }
 
-fetch('/today_menu', option).then(res => res.json()).then(
-  data =>{
-     let menus = document.querySelectorAll('.menus');
-     console.log(data[0],menus)
-  }
-)
+// fetch('/today_menu', option).then(res => res.json()).then(
+//   data =>{
+//      let menus = document.querySelectorAll('.menus');
+//      console.log(data[0],menus)
+//   }
+// )
 
 
 
